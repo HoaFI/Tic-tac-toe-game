@@ -1,11 +1,11 @@
-#include <iostream>
-#include <cstdio>
-#include "fns.hpp"
+#include "mainwindow.h"
+#include <QApplication>
 
-using namespace std;
+int main(int argc, char *argv[])
+{
+    QApplication a(argc, argv);
+    MainWindow w;
+    w.show();
 
-
-int main() {
-    play();
-    return 0;
+    return a.exec();
 }
